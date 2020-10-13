@@ -1,37 +1,137 @@
+body{
+  background-color: lightgray;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+/*Police + couleurs*/
 h2{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 0;
+  margin-top: 30px;
+  color: #1FA499;
 }
 h3{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 0;
 }
+.join span{
+  display: block  ;
+  color: #C2E124;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.join p{
+  color: #ABB1B8;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
+.whyus>p{
+  opacity: 0.7;
+  line-height: 1.5em;
+}
+/*Boites de d'encadrement*/
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 100px auto auto auto;
-  width: 500px;
+  width: 600px;
+  /*box-shadow: 3px 3px 10px;*/
+  box-shadow: 0px 0px 36px -7px rgba(171, 171, 171, 1);
+  /*background-color: transparent;*/
 }
 .join{
-  width: 500px;
-  height: 150px;
-  background-color: blue;
-  padding: 20px;
+  width: auto;
+  height: 200px;
+  background-color: whitesmoke;
+  padding: 30px;
   text-align: left;
   margin-right: 0;
   color: red;
+  border-radius: 7% 7% 0 0;
 } 
 .monthly{
-  width: 250px;
-  background-color: tomato;
-  padding: 20px;
+  width: 300px;
+  height: 200px;
+  background-color: #2BB3B1;
+  padding: 30px;
+  border-radius: 0 0 0 7%;
+  color: white;
 }
 .whyus{
-  width: 250px;
-  background-color: violet;
-  padding: 20px;
+  width: 300px;
+  height: 200px;
+  background-color: #4ABEBD;
+  padding: 30px;
+  border-radius: 0 0 7% 0;
+  color: white;
 }
 .cadre{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+/*Alignement du prix*/
+.price{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+.pricedollar{
+  font-size: 40px;
+}
+.permonth{
+  display: flex;
+  flex-direction: column  ;
+  justify-content: center;
+  opacity: 0.7;
+  margin-left: 20px;
+}
+/*Bouton*/
+.bouton{
+  text-align: center;
+  width: 190px;
+  height: 60px;
+  background-color: #C2E124;
+  border-radius: 20% 20% 20% 20%;
+  box-shadow: 0px 0px 36px -7px rgba(171, 171, 171, 0);
+  margin-left: 22px;
+}
+.bouton>p{
+  transform: translateY(100%);
+  margin: 0;
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 640px) {
+  .main{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px auto auto auto;
+    text-align: center;
+  }
+  
+  .monthly{
+    border-radius: 0;
+  }
+  .join{
+    width: 320px ;
+    height: 200px;
+    padding: 20px;
+  }
+  .cadre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bouton{
+    margin-left: 55px;
+  }
+  h2{
+    margin-top: 10px;
+    text-align: center;
+    }
+  h3{
+    text-align: center;
+  }
 }
